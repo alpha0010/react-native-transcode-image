@@ -1,0 +1,33 @@
+{
+  "name": "react-native-transcode-image",
+  "title": "React Native Transcode Image",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alpha0010/react-native-transcode-image.git",
+    "baseUrl": "https://github.com/alpha0010/react-native-transcode-image"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "Alpha",
+    "email": "alpha0010@users.noreply.github.com"
+  },
+  "license": "Apache-2.0",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "16.2.0",
+    "react-native": "^0.52.0"
+  },
+  "devDependencies": {
+    "react": "16.2.0",
+    "react-native": "^0.57.4"
+  }
+}
