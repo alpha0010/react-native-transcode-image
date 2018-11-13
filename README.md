@@ -16,7 +16,9 @@
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `react-native-transcode-image` and add `RNTranscodeImage.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNTranscodeImage.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+4. In XCode, in the project navigator, select your project. Add `$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)` to your project's `Build Settings` ➜ `Library Search Paths`
+5. In XCode, in the project navigator, select your project. Enable `Build Settings` ➜ `Always Embed Swift Standard Libraries` in your project
+6. Run your project (`Cmd+R`)
 
 #### Android
 

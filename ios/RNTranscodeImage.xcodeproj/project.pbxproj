@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNTranscodeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNTranscodeImage.m */; };
+		B5BD3C54219A1BCB009A31B6 /* RNTranscodeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD3C53219A1BCB009A31B6 /* RNTranscodeImage.swift */; };
+		B5BD3C56219A1C4D009A31B6 /* RNTranscodeImageBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BD3C55219A1C4D009A31B6 /* RNTranscodeImageBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +25,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNTranscodeImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNTranscodeImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNTranscodeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTranscodeImage.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNTranscodeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTranscodeImage.m; sourceTree = "<group>"; };
+		B5BD3C52219A1BCA009A31B6 /* RNTranscodeImage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNTranscodeImage-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5BD3C53219A1BCB009A31B6 /* RNTranscodeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNTranscodeImage.swift; sourceTree = "<group>"; };
+		B5BD3C55219A1C4D009A31B6 /* RNTranscodeImageBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTranscodeImageBridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +52,10 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNTranscodeImage.h */,
-				B3E7B5891CC2AC0600A0062D /* RNTranscodeImage.m */,
+				B5BD3C53219A1BCB009A31B6 /* RNTranscodeImage.swift */,
+				B5BD3C55219A1C4D009A31B6 /* RNTranscodeImageBridge.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				B5BD3C52219A1BCA009A31B6 /* RNTranscodeImage-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +115,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNTranscodeImage.m in Sources */,
+				B5BD3C54219A1BCB009A31B6 /* RNTranscodeImage.swift in Sources */,
+				B5BD3C56219A1C4D009A31B6 /* RNTranscodeImageBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +220,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
@@ -225,6 +229,9 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNTranscodeImage;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNTranscodeImage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -241,6 +248,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNTranscodeImage;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNTranscodeImage-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
